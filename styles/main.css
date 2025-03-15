@@ -1,0 +1,160 @@
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #f4a261;
+}
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Banner Section */
+.banner {
+    background: url('images/kruger-banner.jpg') center/cover no-repeat;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+/* Static Content */
+.static-content {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+.static-content button {
+    background: #007b00;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.static-content button:hover {
+    background: #005700;
+}
+
+/* Key Attractions Section */
+.recent-projects {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.project-gallery img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+/* Video Section */
+.secondary-video {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+}
+
+.secondary-video video {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 300px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.testimonial.purple {
+    background: #7e22ce;
+    color: white;
+}
+
+.testimonial.dark {
+    background: #1f2937;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-bar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    .image-container {
+        width: 100%;
+    }
+}
